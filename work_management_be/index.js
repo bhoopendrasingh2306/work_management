@@ -3,7 +3,7 @@ const cors = require("cors");
 const multer = require("multer");
 require("./db/config");
 const users = require("./db/users");
-const images = require("./db/images");
+// const images = require("./db/images");
 const todo = require("./db/todo");
 const notes = require("./db/notes");
 const app = express();
