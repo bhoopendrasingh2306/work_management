@@ -148,38 +148,7 @@ app.put("/profile/:id",uploader.single("file") ,async (req, resp) => {
   }
 });
 
-// app.put("/update/profileUpload/:id",uploader.single("file") , async(req,resp)=>{
-//   try{
-//     const upload = await cloudinary.uploadFile(req.file.path);
-//     let result = await images.updateOne(
-//       { userId: req.params.id },
-//       {$set:{img_url:upload.secure_url}}
-//     );
-//   if (result.length > 0) {
-//     resp.send(result);
-//   } else {
-//     resp.send({ result: "No data found" });
-//   }
-    
-//   }catch(err){
-//     resp.send({success:false, msg:err.message});
-//   }
-// })
 
-
-// app.get("/get/profileimage/:id", async(req,resp)=>{
-//   try{
-//     let result = await images.find({ userId: req.params.id },{},{sort: {_id:-1}});
-//   if (result.length > 0) {
-//     resp.send(result);
-//   } else {
-//     resp.send({ result: "No data found" });
-//   }
-    
-//   }catch(err){
-//     resp.send({success:false, msg:err.message});
-//   }
-// })
 
 // ============TODO APIS========
 
